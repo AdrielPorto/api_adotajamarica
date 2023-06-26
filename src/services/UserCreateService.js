@@ -199,7 +199,7 @@ class UserCreateService {
       throw new AppError("Usuário cadastrado com o Google.", 400);
     }
 
-    const resetLink = `http://127.0.0.1:5173/reset?email=${user.email}&token=${user.senha}`;
+    const resetLink = `https://adotajamarica.vercel.app/reset?email=${user.email}&token=${user.senha}`;
 
     return { resetLink };
   }

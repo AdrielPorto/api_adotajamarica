@@ -194,7 +194,6 @@ class PetsRepository {
       .select("pets.*", knex.raw("ARRAY_AGG(fotos_pets.url) AS fotos"))
       .leftJoin("fotos_pets", "pets.id", "fotos_pets.pet_id")
       .where("pets.usuario_id", id)
-      .where("pets.disponibilidade", true)
       .groupBy("pets.id")
       .orderBy("pets.id", "desc");
 

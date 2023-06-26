@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3333",
+      "url": "https://adotajamarica-94dd2d31c529.herokuapp.com",
       "description": "Servidor de desenvolvimento"
     }
   ],
